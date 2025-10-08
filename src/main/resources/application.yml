@@ -2,7 +2,7 @@ encrypt:
   key: "57CD4EC2CEE43229E4CFAE6B18BA5"
 
 server:
-  port: 8071
+  port: 18071
 
 spring:
   application:
