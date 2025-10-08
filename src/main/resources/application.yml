@@ -2,7 +2,7 @@ encrypt:
   key: "57CD4EC2CEE43229E4CFAE6B18BA5"
 
 server:
-  port: 18071
+  port: ${CONFIG_SERVER_PORT:8071}
 
 spring:
   application:
@@ -19,6 +19,7 @@ spring:
           default-label: main
           clone-on-start: true
           force-pull: true
+          timeout: 30
 
   rabbitmq:
     host: "localhost"
