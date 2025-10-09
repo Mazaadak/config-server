@@ -22,6 +22,7 @@ spring:
           clone-on-start: true
           force-pull: true
           timeout: 30
+          skip-ssl-validation: true
 
   kafka:
     bootstrap-servers: localhost:9092
