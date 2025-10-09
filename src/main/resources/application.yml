@@ -16,17 +16,15 @@ spring:
       server:
         git:
           uri: "https://github.com/Mazaadak/mazaadak-configs.git"
+          username: mazadak-bot
+          password: ${MAZADAK_GITHUB_TOKEN}
           default-label: main
           clone-on-start: true
           force-pull: true
           timeout: 30
 
-  rabbitmq:
-    host: "localhost"
-    port: 5672
-    username: "guest"
-    password: "guest"
-
+  kafka:
+    bootstrap-servers: localhost:9092
 
 management:
   endpoints:
